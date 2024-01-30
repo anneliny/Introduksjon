@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduksjon</title>
+</head>
+
+<body id="Halve">
+    <div id="Hele">
+
+        <button onclick="buttonChange()">Endre bakgrunnsfarge</button>
+
+        <h2>Litt om meg</h2>
+
+        <p class="tekst">Mitt navn er Anneli N. Syversen, jeg er 29 år gammel og bor i Larvik. <br>
+            Jeg er tidligere utdannet faglærer i kunst og håndverk, men ønsker nå <br>å gå i en annen retning. </p>
+        <img src="Snapchat-555256551.jpg">
+
+        <div class="tekstmer">Her er en liste over mine hobbyer:
+            <ul>
+                <li>Håndarbeid:</li>
+                <ul>
+                    <li>Hekling</li>
+                    <li>Leire</li>
+                    <li>Strikking</li>
+                    <li>Sammensetting av naturmaterialer</li>
+                    <li>Smykke laging</li>
+                </ul>
+                <li>Samle på ting fra naturen:</li>
+                <ul>
+                    <li>Stein</li>
+                    <li>Drivved</li>
+                    <li>Skjell</li>
+                    <li>Annet</li>
+                </ul>
+                <li>Fotografering</li>
+            </ul>
+        </div>
+    </div>
+
+    <style>
+        h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            margin-left: 100px;
+            margin-top: 50; 
+            background-color: lightblue;
+        }
+
+        img {
+            width: 200px;
+            border: solid 5px;
+            border-radius: 20px;
+            padding: 10px;
+            background-color: white;
+            float: inline-start
+        }
+
+        .tekst {
+            font-size: large;
+        }
+
+        .tekstmer {
+            padding-left: 10px;
+            border: solid 1px;
+            width: 310px;
+            float: left;
+            margin-left: 20px;
+            margin-top: 50px;
+            background-color: white;
+        }
+
+        button {
+            font-size: xx-small;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(24, 58, 24);
+        }
+    </style>
+    <script>
+        let colorChange = true;
+        
+        function buttonChange() {
+            if (colorChange == true) {
+                document.getElementById('Halve').style.backgroundColor = 'lightgreen';
+            }
+            else {
+                document.getElementById('Halve').style.backgroundColor = 'lightpink';
+            }
+            colorChange = !colorChange;
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
